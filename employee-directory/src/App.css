@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+ .App {
+  text-align: center;
+}
+
+/*
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+.jumbotron {
+  background-image: url(https://www.insureon.com/-/media/blog/posts/2014/photo_group-of-employees.jpg?rev=d264fa03bc134dfe8f378c5424f0fc2f&hash=2B78F2C51F54160F41E3B9B392F5A820);
+  color: #0011ff;
+  font-family: 'Bebas Neue', cursive;
+  text-shadow:1px 1px 10px #fff, 1px 1px 10px #ddd;
+  }

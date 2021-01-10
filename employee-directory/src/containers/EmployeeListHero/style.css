@@ -1,0 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+.App {
+ text-align: center;
+}
+
+.jumbotron {
+    background-image: url(https://www.insureon.com/-/media/blog/posts/2014/photo_group-of-employees.jpg?rev=d264fa03bc134dfe8f378c5424f0fc2f&hash=2B78F2C51F54160F41E3B9B392F5A820);
+    color: #0011ff;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ddd;
+    }
