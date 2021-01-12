@@ -8,11 +8,11 @@ function TableHeading() {
       <ul className="list-group search-results">
         <li className="list-group-item">
           <tr>
-            <th scope="col" class="Photo">Photo</th>
-            <th scope="col" class="Photo">Name</th>
-            <th scope="col" class="Photo">Phone </th>
-            <th scope="col" class="Photo">Email</th>
-            <th scope="col" class="Photo">DOB</th>
+            <th scope="col" className="photo">photo</th>
+            <th scope="col" className="photo">Name</th>
+            <th scope="col" className="photo">Phone </th>
+            <th scope="col" className="photo">Email</th>
+            <th scope="col" className="photo">DOB</th>
           </tr>
         </li>
       </ul>
