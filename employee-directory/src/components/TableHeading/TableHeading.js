@@ -4,16 +4,19 @@ import "./style.css";
 
 function TableHeading() {
   return (
-
-        <thead class="thead-dark">
+    <thead class="thead-dark">
+      <ul className="list-group search-results">
+        <li className="list-group-item">
           <tr>
-            <th scope="col">Photo</th>
-            <th scope="col">Name</th>
-            <th scope="col">Phone </th>
-            <th scope="col">Email</th>
-            <th scope="col">DOB</th>
+            <th scope="col" class="Photo">Photo</th>
+            <th scope="col" class="Photo">Name</th>
+            <th scope="col" class="Photo">Phone </th>
+            <th scope="col" class="Photo">Email</th>
+            <th scope="col" class="Photo">DOB</th>
           </tr>
-        </thead>
+        </li>
+      </ul>
+    </thead>
   );
 }
 export default TableHeading;
