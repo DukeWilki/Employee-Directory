@@ -7,6 +7,8 @@ import API from "../../utils/API";
 function TableData() {
   const [employeeState, setEmployeeState] = useState([]);
 
+ 
+
   useEffect(() => {
     // For demonstration purposes, we mock an API call.
     API.getEmployee().then((res) => {
