@@ -18,27 +18,27 @@ function TableData() {
 
   function parseDate(birthdate) {
     const date = new Date(birthdate);
-    return (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
+    return date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
   }
 
   return (
+    // <div className="centre"> 
     <tbody class="tbody-dark">
-      <ul className="list-group search-results">
+      <ul className="list-group search-results ">
         {employeeState.map((result) => (
           <li key={result} className="list-group-item">
-            {/* <img alt="Dog" src={result} className="img-fluid" /> */}
-            {/* <p>res.data.results</p> */}
             <tr key={result}>
-            <td className="photo"><img alt="profile" src={result.picture.thumbnail} /></td>
-            <td className="photo">{result.name.first} {result.name.last}</td>
-            <td className="photo">{result.phone}</td>
-            <td className="photo">{result.email}</td>
-            <td className="photo">{ parseDate(result.dob.date) }</td>
+            <td className="datafeild"><img alt="profile" src={result.picture.medium} /></td>
+            <td className="datafeild">{result.name.first} {result.name.last}</td>
+            <td className="datafeild wide">{result.email}</td>
+            <td className="datafeild">{result.phone}</td>
+            <td className="datafeild">{ parseDate(result.dob.date) }</td>
             </tr>
           </li> 
         ))}
       </ul>
     </tbody>
+    // </div>
   );
 }
 export default TableData;

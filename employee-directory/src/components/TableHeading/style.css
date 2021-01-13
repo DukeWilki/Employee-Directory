@@ -1,4 +1,11 @@
-.photo {
+.datafeild {
     /* background-color: red; */
-    min-width: 200px;
+    min-width: 180px;
+    max-width: 500px;
+}
+
+.wide {
+    /* background-color: red; */
+    min-width: 250px;
+    max-width: 500px;
 }
