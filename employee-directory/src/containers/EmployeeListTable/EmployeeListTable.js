@@ -7,9 +7,16 @@ import TableData from "../../components/TableData/TableData";
 
 
 function EmployeeListTable() {
+
+
+  const setSortedField = () => {
+    console.log("object");
+  };
+
+
   return (
     <table className="EmployeeListTable table">
-    <TableHeading />
+    <TableHeading onClick="" onClick={setSortedField}/>
     <TableData />
     </table>
   );

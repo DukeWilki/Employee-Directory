@@ -6,8 +6,8 @@ import EmployeeListSearch from "./containers/EmployeeListSearch/EmployeeListSear
 import EmployeeListTable from "./containers/EmployeeListTable/EmployeeListTable";
 import Test from "./containers/Test/Test";
 
-//rename your onChange prop to handleInputChange - done
-//create a state which contains the current search text  - done
+//rename your onChange prop to handleInputChange 
+//create a state which contains the current search text
 //pass the search text into EmployeeListTable and also EmployeeListSearch 
 //In your table, implement the logic for searching the user 
 function App() {
@@ -16,7 +16,9 @@ function App() {
 
   const changeInput = () => {
     // this.setState(props => ({ props: !state.isShow }));
-    // this.setSearch(EmployeeListSearch.props);
+    this.setState({ inputState: this.state.value })
+    // this.setState(EmployeeListSearch.value);
+    console.log(inputState);
   };
 
 
@@ -24,8 +26,7 @@ function App() {
       
       <div className="App">
         <EmployeeListHero />
-        <EmployeeListSearch handleInputChange="" handleInputChange={changeInput}/> 
-        
+        <EmployeeListSearch inputState="" handleInputChange={changeInput}/> 
         {/* props in the above line */}
         <Test />
         <EmployeeListTable />
