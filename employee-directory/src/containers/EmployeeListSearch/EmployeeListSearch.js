@@ -2,25 +2,24 @@ import React from "react";
 import "./style.css";
 
 
-function EmployeeListSearch() {
+function EmployeeListSearch(props) {
+  console.log('props', props)
   return (
-    <div className="container">
-      <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <form class="d-flex">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          ></input>
-          <button class="btn btn-outline-success" type="submit">
-            Search
-          </button>
-          </form>
-        </div>
-      </nav>
-    </div>
+    <form className="search">
+      <div className="form-group">
+        {/* <label htmlFor="language">Search Term:</label> */}
+        <input
+          value={props.search}
+          onChange={props.handleInputChange}
+          name="term"
+          list="term"
+          type="text"
+          className="form-control searchbar"
+          placeholder="Search name here"
+          id="term"
+        />
+      </div>
+    </form>
   );
 }
 

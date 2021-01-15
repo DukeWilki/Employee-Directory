@@ -5,6 +5,7 @@ import TableHeading from "../../components/TableHeading/TableHeading";
 import TableData from "../../components/TableData/TableData";
 
 
+
 function EmployeeListTable() {
   return (
     <table className="EmployeeListTable table">
