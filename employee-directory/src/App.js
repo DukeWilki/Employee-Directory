@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import React, { useState } from "react";
 import "./App.css";
 import EmployeeListHero from "./containers/EmployeeListHero/EmployeeListHero";
@@ -14,13 +14,12 @@ function App() {
   const [inputState, setinputState] = useState([]);
   // return <EmployeeListHero /> ;
 
-  const changeInput = () => {
+  const changeInput = (e) => {
     // this.setState(props => ({ props: !state.isShow }));
-    this.setState({ inputState: this.state.value })
+    setinputState(e.target.value)
     // this.setState(EmployeeListSearch.value);
     console.log(inputState);
   };
-
 
     return (
       
