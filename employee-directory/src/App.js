@@ -6,8 +6,8 @@ import EmployeeListSearch from "./containers/EmployeeListSearch/EmployeeListSear
 import EmployeeListTable from "./containers/EmployeeListTable/EmployeeListTable";
 import Test from "./containers/Test/Test";
 
-//rename your onChange prop to handleInputChange 
-//create a state which contains the current search text
+//rename your onChange prop to handleInputChange -done
+//create a state which contains the current search text -done
 //pass the search text into EmployeeListTable and also EmployeeListSearch 
 //In your table, implement the logic for searching the user 
 function App() {
@@ -27,7 +27,7 @@ function App() {
         <EmployeeListHero />
         <EmployeeListSearch inputState="" handleInputChange={changeInput}/> 
         {/* props in the above line */}
-        <Test />
+        {/* <Test /> */}
         <EmployeeListTable />
       </div>
     );

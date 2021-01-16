@@ -1,12 +1,14 @@
-import React, { useContext } from "react";
-import ArticleContext from "../../utils/ArticleContext";
+import React, { useState } from "react";
+// import ArticleContext from "../../utils/ArticleContext";
+import App from "../../App";
 import "./style.css";
 
 function SearchResults() {
-  const {input} = useContext(ArticleContext);
+  const {inputState} = useState(App);
   return (
     <ul className="list-group search-results">
-              {input}
+      input: 
+              {inputState}
       <li className="list-group-item">
         {/* <h2>{title}</h2> */}
         {/* <a href={url}>{url}</a> */}

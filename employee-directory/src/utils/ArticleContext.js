@@ -3,7 +3,7 @@ import React from "react";
 const ArticleContext = React.createContext({
   // title: "",
   // url: ""
-  input: ""
+  input: "yo, bro!"
 });
 
 

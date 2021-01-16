@@ -6,11 +6,11 @@ import API from "../../utils/API";
 
 function TableData() {
   const [employeeState, setEmployeeState] = useState([]);
-
- 
+  const inputState = useState();
+  console.log("state: ");
+  console.log(inputState);  
 
   useEffect(() => {
-    // For demonstration purposes, we mock an API call.
     API.getEmployee().then((res) => {
       setEmployeeState(res.data.results);
       console.log("Emp State:");
@@ -24,7 +24,6 @@ function TableData() {
   }
 
   return (
-    // <div className="centre"> 
     <tbody class="tbody-dark">
       <ul className="list-group search-results ">
         {employeeState.map((result) => (
@@ -40,15 +39,8 @@ function TableData() {
         ))}
       </ul>
     </tbody>
-    // </div>
   );
 }
 export default TableData;
 
-// {
-  /* <th scope="col">:)</th>
-<th scope="col">Bob</th>
-<th scope="col">123456789 </th>
-<th scope="col">bob@bob.bob</th>
-<th scope="col">1/1/11</th> */
-// }
+
