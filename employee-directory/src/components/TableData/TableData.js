@@ -1,15 +1,21 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
 import API from "../../utils/API";
-
+import App from "../../App";
 
 
 function TableData() {
-  const [employeeState, setEmployeeState] = useState([]);
-  const inputState = useState();
-  console.log("state: ");
-  console.log(inputState);  
 
+  const [inputState, setinputState] = useState();
+  useEffect(() => {
+    App.getInput().then((res) => {
+      setinputState(res.data);
+  console.log("Input state: ");
+  console.log(res.data);  
+    });
+  }, []);
+
+  const [employeeState, setEmployeeState] = useState([]);
   useEffect(() => {
     API.getEmployee().then((res) => {
       setEmployeeState(res.data.results);
