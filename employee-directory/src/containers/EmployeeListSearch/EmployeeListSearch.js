@@ -1,15 +1,12 @@
-// import React from "react";
 import React, { useState, useEffect } from "react";
 import "./style.css";
-import App from "../../App";
 
 
 function EmployeeListSearch(props) {
-  
+  // Render input feild
   return (
     <form className="search">
       <div className="form-group">
-        {/* <label htmlFor="language">Search Term:</label> */}
         <input
           value={props.search}
           onChange={props.handleInputChange}
