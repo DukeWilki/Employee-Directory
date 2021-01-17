@@ -7,7 +7,9 @@ import App from "../../App";
 
 
 
-function EmployeeListTable() {
+function EmployeeListTable(props) {
+
+  console.log('props:', props.results)
 
   // const setSortedField = () => {
   //   console.log("object");

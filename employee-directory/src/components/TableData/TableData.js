@@ -4,16 +4,20 @@ import API from "../../utils/API";
 import App from "../../App";
 
 
-function TableData() {
+function TableData(props) {
+  
+  // const [inputState, props] = useState([]);
+  // console.log('props:', props.input)
+  console.log('props:', props.results)
 
-  const [inputState, setinputState] = useState();
-  useEffect(() => {
-    App.getInput().then((res) => {
-      setinputState(res.data);
-  console.log("Input state: ");
-  console.log(res.data);  
-    });
-  }, []);
+  // const [inputState, setinputState] = useState();
+  // useEffect(() => {
+  //   App.getInput().then((props) => {
+  //     setinputState(props.data);
+  // console.log("Input state: ");
+  // console.log(props.data);  
+  //   });
+  // }, []);
 
   const [employeeState, setEmployeeState] = useState([]);
   useEffect(() => {
@@ -32,6 +36,7 @@ function TableData() {
   return (
     <tbody class="tbody-dark">
       <ul className="list-group search-results ">
+      <h2>input: {props.inputState}</h2>
         {employeeState.map((result) => (
           <li key={result} className="list-group-item">
             <tr key={result}>

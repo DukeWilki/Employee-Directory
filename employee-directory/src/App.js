@@ -4,6 +4,7 @@ import "./App.css";
 import EmployeeListHero from "./containers/EmployeeListHero/EmployeeListHero";
 import EmployeeListSearch from "./containers/EmployeeListSearch/EmployeeListSearch";
 import EmployeeListTable from "./containers/EmployeeListTable/EmployeeListTable";
+import TableData from "./components/TableData/TableData";
 import Test from "./containers/Test/Test";
 
 //rename your onChange prop to handleInputChange -done
@@ -25,7 +26,7 @@ function App() {
       
       <div className="App">
         <EmployeeListHero />
-        <EmployeeListSearch inputState="" handleInputChange={changeInput}/> 
+        <EmployeeListSearch inputState="" handleInputChange={changeInput} results={inputState}/> 
         {/* props in the above line */}
         {/* <Test /> */}
         <EmployeeListTable />
