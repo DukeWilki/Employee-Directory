@@ -5,7 +5,7 @@ import App from "../../App";
 
 
 function EmployeeListSearch(props) {
-  console.log('props:', props.results)
+  
   return (
     <form className="search">
       <div className="form-group">

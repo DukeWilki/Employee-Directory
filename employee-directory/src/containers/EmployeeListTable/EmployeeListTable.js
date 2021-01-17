@@ -9,8 +9,6 @@ import App from "../../App";
 
 function EmployeeListTable(props) {
   
-  const [inputState, setinputState] = useState([]);
-
 
   console.log('props:', props.results)
 
@@ -18,9 +16,7 @@ function EmployeeListTable(props) {
   //   console.log("object");
   // };
 
-const setSortedField = (e) => {
-console.log("sort");
-}
+
 
 //   handleSort = event => {
 //     event.preventDefault();
@@ -44,8 +40,10 @@ console.log("sort");
 
   return (
     <table className="EmployeeListTable table">
-    <TableHeading onClick="" onClick={setSortedField}/>
-    <TableData results={inputState}/>
+      <TableHeading />
+      {/* <TableHeading onClick="" onClick={setSortedField}/> */}
+    {/* <TableHeading onClick="" onClick={() => {context.handleSort(name.toLowerCase()) }}/> */}
+    <TableData results={props.results}/>
     </table>
   );
 }
