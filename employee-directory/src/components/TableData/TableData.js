@@ -36,7 +36,11 @@ function TableData(props) {
   return (
     <tbody class="tbody-dark">
       <ul className="list-group search-results ">
-      <h2>input: {props.inputState}</h2>
+      {/* <h2 
+          value={props.search}
+          onChange={props.handleInputChange}
+        /></h2> */}
+
         {employeeState.map((result) => (
           <li key={result} className="list-group-item">
             <tr key={result}>

@@ -29,7 +29,7 @@ function App() {
         <EmployeeListSearch inputState="" handleInputChange={changeInput} results={inputState}/> 
         {/* props in the above line */}
         {/* <Test /> */}
-        <EmployeeListTable />
+        <EmployeeListTable inputState="" handleInputChange={changeInput} results={inputState}/>
       </div>
     );
   

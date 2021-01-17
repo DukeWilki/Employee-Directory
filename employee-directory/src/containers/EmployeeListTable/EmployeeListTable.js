@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 // import API from "../../utils/API.js";
 import TableHeading from "../../components/TableHeading/TableHeading";
@@ -8,6 +8,9 @@ import App from "../../App";
 
 
 function EmployeeListTable(props) {
+  
+  const [inputState, setinputState] = useState([]);
+
 
   console.log('props:', props.results)
 
@@ -42,7 +45,7 @@ console.log("sort");
   return (
     <table className="EmployeeListTable table">
     <TableHeading onClick="" onClick={setSortedField}/>
-    <TableData />
+    <TableData results={inputState}/>
     </table>
   );
 }
