@@ -21,10 +21,10 @@ This project utilises React and third party API to create an "employee directory
 This applictaion is made up of: The application operates primarily from App.js and is modularised with three containers, and then some components. Each script has its own css. Public contains a custom favicon and manifest. The API is stored in the utils folder.
 
 ## Installation
-Access the finalised app on heroku. If cloning this repo onto your local, you will need to install npm `npm i` then start the app with `npm start`. 
+Access the finalised app on https://dukewilki.github.io/employee-directory. If cloning this repo onto your local, you will need to install npm `npm i` then start the app with `npm start`. 
 
 ## Usage
-access the page on heroku. Type some text in the input box to find any employee with that string in their first name. Click on teh "Name" heading on the table to sort into alphabetical order.
+Access the page on https://dukewilki.github.io/employee-directory. Type some text in the input box to find any employee with that string in their first name. Click on teh "Name" heading on the table to sort into alphabetical order.
 
 ## Design
 Fairly basic design based mostly on Bootstrap. Stock image and some custom CSS has been used in the hero. A custom favicon has also been created.
