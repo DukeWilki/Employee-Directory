@@ -8,8 +8,7 @@ function EmployeeListHero() {
         <div className="container">
           <h1 className="display-4">Employee Directory</h1>
           <p className="lead">
-            This is a modified jumbotron that occupies the entire horizontal
-            space of its parent.
+            Search employees by first name
           </p>
         </div>
       </div>
